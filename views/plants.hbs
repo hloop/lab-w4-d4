@@ -1,0 +1,12 @@
+<h1>Plant's Page</h1>
+
+{{#each plantsArray}}
+
+<div>
+<span>{{this.species}}</span>
+<img class="plantImage" src='{{this.image}}'>
+</div>
+
+<a href="/plants/{{this._id}}">See Details</a>
+
+{{/each}}
